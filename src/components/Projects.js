@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from '../styles/Projects.module.css';
 import { motion } from 'framer-motion';
+import { title } from 'framer-motion/client';
 
 const projects = [
-    { title: 'Proyecto 1', description: 'Portafolio.' },
-    { title: 'Proyecto 2', description: 'Descripción del proyecto 2.' },
-    { title: 'Proyecto 3', description: 'Descripción del proyecto 3.' },
+    { title: 'Precio de coches', description: 'Es un proyecto en el cual tengo en cuenta una base de datos para analizar el precio de coches teniendo en cuenta Kilometros y más casuisticas.' },
+    { title: 'Expected Foot', description: 'Se trata de un proyecto realizado con dos personas más donde se tiene en cuenta el analisis de los jugadores partido a partido para crear un chatbot que pueda predecir cuantos goles puede llegar a meter un jugador teniendo en cuenta sus características.' },
+    { title: 'Perceptron', description: 'Un proyecto donde el usuario puede poner a prueba una neurona.' },
+    { title: 'Salario trabajadores', description: 'El proyecto trata de analizar el salario de unos trabajadores teniendo en cuenta un CSV.'}
 ];
 
 const Projects = () => {

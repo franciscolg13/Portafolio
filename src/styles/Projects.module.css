@@ -1,0 +1,32 @@
+.projects {
+    padding: 60px 20px;
+    background-color: #121212;
+    color: #EAEAEA;
+    text-align: center;
+    border-bottom: 2px solid #BB86FC;
+}
+
+.projectList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projectCard {
+    background: #1E1E1E;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+h3 {
+    color: #BB86FC;
+}
+
+p {
+    color: #B0BEC5;
+}

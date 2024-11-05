@@ -1,0 +1,59 @@
+/* src/styles/Experience.module.css */
+
+.experience {
+    padding: 60px 20px; /* Espaciado superior e inferior */
+    background-color: #121212; /* Color de fondo oscuro */
+    color: #EAEAEA; /* Color del texto */
+    text-align: center; /* Centrar texto */
+    border-bottom: 2px solid #BB86FC; /* Borde inferior */
+}
+
+h2 {
+    color: #BB86FC; /* Color del encabezado */
+    margin-bottom: 40px; /* Espaciado inferior para el encabezado */
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px; /* Ancho máximo de la línea de tiempo */
+    margin: auto; /* Centrar la línea de tiempo */
+}
+
+.timelineItem {
+    position: relative;
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Margen entre items */
+    border-left: 4px solid #BB86FC; /* Línea vertical a la izquierda */
+    transition: transform 0.3s; /* Transición suave al pasar el ratón */
+}
+
+.timelineItem:hover {
+    transform: translateY(-5px); /* Mover hacia arriba al pasar el ratón */
+}
+
+.timelineMarker {
+    position: absolute;
+    left: -10px; /* Ajustar la posición del marcador */
+    width: 12px; /* Ancho del marcador */
+    height: 12px; /* Alto del marcador */
+    background-color: #BB86FC; /* Color del marcador */
+    border-radius: 50%; /* Hacer el marcador circular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para el marcador */
+}
+
+.timelineContent {
+    padding-left: 20px; /* Espaciado para el contenido */
+    background: #1E1E1E; /* Fondo del contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para el contenido */
+}
+
+h3 {
+    color: #BB86FC; /* Color del título de la experiencia */
+    margin: 0; /* Eliminar margen */
+}
+
+p {
+    color: #B0BEC5; /* Color del texto de descripción */
+    margin: 5px 0; /* Margen para los párrafos */
+}

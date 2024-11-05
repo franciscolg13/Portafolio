@@ -1,0 +1,37 @@
+/* src/styles/Special.module.css */
+
+.special {
+    padding: 60px 20px; /* Espaciado superior e inferior */
+    background-color: #121212; /* Color de fondo oscuro */
+    color: #EAEAEA; /* Color del texto */
+    text-align: center; /* Centrar texto */
+    border-bottom: 2px solid #BB86FC; /* Borde inferior */
+}
+
+.toolList {
+    display: flex; /* Usar flexbox para el diseño */
+    justify-content: center; /* Centrar los elementos */
+    flex-wrap: wrap; /* Permitir que las herramientas se ajusten a múltiples líneas */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.toolItem {
+    background: #1E1E1E; /* Fondo de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para la tarjeta */
+    margin: 15px; /* Espaciado entre tarjetas */
+    padding: 10px; /* Ajustar padding para más espacio interno */
+    width: 200px; /* Ancho más pequeño */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+    display: inline-block; /* Asegura que cada elemento se comporte como un bloque en línea */
+}
+
+.toolItem:hover {
+    transform: scale(1.05); /* Escalar al pasar el ratón */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Sombra más prominente en hover */
+}
+
+h2 {
+    color: #BB86FC; /* Color del encabezado */
+    margin-bottom: 20px; /* Espaciado inferior para el encabezado */
+}

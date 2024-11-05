@@ -19,7 +19,7 @@ const Contact = () => {
             <p>Conéctame a través de las redes sociales o envíame un correo:</p>
             <div className={styles.icons}>
                 <motion.a 
-                    href="https://www.linkedin.com/in/tu-perfil" 
+                    href="https://www.linkedin.com/in/francisco-lópez-gonzález-638730182/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.2 }} 
@@ -28,7 +28,7 @@ const Contact = () => {
                     <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
                 </motion.a>
                 <motion.a 
-                    href="https://github.com/tu-usuario" 
+                    href="https://github.com/franciscolg13" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.2 }} 
@@ -36,7 +36,7 @@ const Contact = () => {
                 >
                     <FontAwesomeIcon icon={faGithub} className={styles.icon} />
                 </motion.a>
-                <motion.a href="mailto:tucorreo@example.com">
+                <motion.a href="mailto:franciscolopez1300@gmail.com">
                     <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
                 </motion.a>
             </div>

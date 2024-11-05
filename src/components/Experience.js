@@ -5,9 +5,9 @@ import styles from '../styles/Experience.module.css';
 
 const Experience = () => {
     const experiences = [
-        { position: 'Desarrollador Frontend', company: 'Empresa A', year: '2021 - Presente' },
-        { position: 'Desarrollador Backend', company: 'Empresa B', year: '2020 - 2021' },
-        { position: 'Practicante de Desarrollo', company: 'Empresa C', year: '2019 - 2020' },
+        { position: 'Tecnico de Información', company: 'Disofic', year: 'Dic. 2020 - Jun. 2021' },
+        { position: 'Cybersecurity - SOC Analyst at Babel', company: 'Babel', year: 'Mar. 2022 - Jun 2023' },
+        { position: 'Full Stack LLM Development Analyst', company: 'Accenture', year: 'Jun, 2024 - Act' },
     ];
 
     return (

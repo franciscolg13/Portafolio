@@ -3,7 +3,7 @@ import styles from '../styles/Projects.module.css';
 import { motion } from 'framer-motion';
 
 const projects = [
-    { title: 'Proyecto 1', description: 'Descripción del proyecto 1.' },
+    { title: 'Proyecto 1', description: 'Portafolio.' },
     { title: 'Proyecto 2', description: 'Descripción del proyecto 2.' },
     { title: 'Proyecto 3', description: 'Descripción del proyecto 3.' },
 ];

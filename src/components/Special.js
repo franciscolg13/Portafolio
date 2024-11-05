@@ -5,14 +5,16 @@ import styles from '../styles/Special.module.css';
 
 const Special = () => {
     const tools = [
-        { name: 'React' },
-        { name: 'JavaScript' },
-        { name: 'CSS' },
-        { name: 'HTML' },
-        { name: 'Node.js' },
-        { name: 'Express' },
+        { name: 'AWS' },
+        { name: 'Lambda' },
+        { name: 'Python' },
+        { name: 'LLM Analyst' },
+        { name: 'IBM QRadar' },
+        { name: 'Network' },
+        { name: 'Blue Teams' },
         { name: 'MongoDB' },
-        { name: 'Git' },
+        { name: 'OSINT' },
+        { name: 'Autopsy' },
     ];
 
     return (

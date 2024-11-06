@@ -31,3 +31,14 @@
     color: #4A90E2;
     transform: scale(1.2);
 }
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+}

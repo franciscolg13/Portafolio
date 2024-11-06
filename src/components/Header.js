@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'; // Importa useEffect aquí
+import React, { useEffect } from 'react';
 import styles from '../styles/Header.module.css';
 
 const Header = () => {
@@ -9,7 +9,14 @@ const Header = () => {
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const headerOffset = document.querySelector(`.${styles.header}`).offsetHeight; // Altura del header
+                const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
             }
         };
 

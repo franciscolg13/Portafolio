@@ -1,6 +1,0 @@
-const Experience = () => {
-    const experiences = [
-        { position: 'Tecnico de Información', company: 'Disofic', year: 'Dic. 2020 - Jun. 2021' },
-        { position: 'Cybersecurity - SOC Analyst at Babel', company: 'Babel', year: 'Mar. 2022 - Jun 2023' },
-        { position: 'Full Stack LLM Development Analyst', company: 'Accenture', year: 'Jun, 2024 - Act' },
-    ];

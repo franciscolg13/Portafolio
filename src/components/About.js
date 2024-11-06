@@ -43,7 +43,7 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: false }}
             >
-                Soy un chico FullStack Development dispuesto a aprender y acceder a cualquier reto nuevo.
+                Soy un desarrollador FullStack apasionado por aprender y enfrentar nuevos desafíos. Me adapto rápidamente a nuevas tecnologías y metodologías, lo que me permite resolver problemas de manera eficiente. Disfruto trabajar en equipo, colaborar y aportar ideas para lograr resultados innovadores. Mi enfoque se basa en la mejora continua y en aprovechar cada oportunidad para crecer profesionalmente.
             </motion.p>
         </section>
     );

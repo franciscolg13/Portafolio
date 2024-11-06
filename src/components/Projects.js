@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/Projects.module.css';
 import { motion } from 'framer-motion';
-import { title } from 'framer-motion/client';
+
 
 const projects = [
     { title: 'Precio de coches', description: 'Es un proyecto en el cual tengo en cuenta una base de datos para analizar el precio de coches teniendo en cuenta Kilometros y más casuisticas.' },

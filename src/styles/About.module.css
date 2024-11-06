@@ -1,15 +1,17 @@
+/* src/styles/About.module.css */
+
 .about {
     background-color: #1E1E1E;
     color: #EAEAEA;
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px 20px;  /* Reducir padding-top a 40px */
     border-bottom: 2px solid #BB86FC;
 }
 
 .about h2 {
     font-size: 2.5rem;
     color: #BB86FC;
-    margin-bottom: 20px;
+    margin-bottom: 10px;  /* Reducir el margen inferior */
 }
 
 .about p {
@@ -18,4 +20,19 @@
     margin: 0 auto;
     line-height: 1.6;
     font-size: 1.2rem;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .about {
+        padding-top: 50px;  /* Ajustar padding-top en pantallas pequeñas */
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
 }

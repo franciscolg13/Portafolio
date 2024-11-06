@@ -13,6 +13,7 @@
     justify-content: center; /* Centrar los elementos */
     flex-wrap: wrap; /* Permitir que las herramientas se ajusten a múltiples líneas */
     gap: 20px; /* Espacio entre elementos */
+    max-width: 100%; /* Asegura que el contenedor no tenga desbordamientos */
 }
 
 .toolItem {
@@ -22,6 +23,8 @@
     margin: 15px; /* Espaciado entre tarjetas */
     padding: 10px; /* Ajustar padding para más espacio interno */
     width: 200px; /* Ancho más pequeño */
+    max-width: 100%; /* Asegura que la tarjeta no exceda el contenedor */
+    box-sizing: border-box; /* Incluir padding y borde en el cálculo del ancho */
     transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
     display: inline-block; /* Asegura que cada elemento se comporte como un bloque en línea */
 }

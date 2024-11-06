@@ -1,59 +1,104 @@
 /* src/styles/Experience.module.css */
 
 .experience {
-    padding: 60px 20px; /* Espaciado superior e inferior */
-    background-color: #121212; /* Color de fondo oscuro */
-    color: #EAEAEA; /* Color del texto */
-    text-align: center; /* Centrar texto */
-    border-bottom: 2px solid #BB86FC; /* Borde inferior */
+    padding: 60px 20px;
+    background-color: #121212;
+    color: #EAEAEA;
+    text-align: center;
+    border-bottom: 2px solid #BB86FC;
 }
 
 h2 {
-    color: #BB86FC; /* Color del encabezado */
-    margin-bottom: 40px; /* Espaciado inferior para el encabezado */
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #BB86FC;
 }
 
 .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    max-width: 600px; /* Ancho máximo de la línea de tiempo */
-    margin: auto; /* Centrar la línea de tiempo */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(#BB86FC, transparent);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    animation: pulseLine 3s infinite alternate;
+}
+
+@keyframes pulseLine {
+    from { background-color: #BB86FC; }
+    to { background-color: #6200EA; }
 }
 
 .timelineItem {
+    display: flex;
+    justify-content: center;
     position: relative;
-    padding: 20px; /* Espaciado interno */
-    margin: 20px 0; /* Margen entre items */
-    border-left: 4px solid #BB86FC; /* Línea vertical a la izquierda */
-    transition: transform 0.3s; /* Transición suave al pasar el ratón */
+    width: 100%;
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.timelineItem:hover {
-    transform: translateY(-5px); /* Mover hacia arriba al pasar el ratón */
-}
-
-.timelineMarker {
-    position: absolute;
-    left: -10px; /* Ajustar la posición del marcador */
-    width: 12px; /* Ancho del marcador */
-    height: 12px; /* Alto del marcador */
-    background-color: #BB86FC; /* Color del marcador */
-    border-radius: 50%; /* Hacer el marcador circular */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para el marcador */
+.timelineItem.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .timelineContent {
-    padding-left: 20px; /* Espaciado para el contenido */
-    background: #1E1E1E; /* Fondo del contenido */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para el contenido */
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h3 {
-    color: #BB86FC; /* Color del título de la experiencia */
-    margin: 0; /* Eliminar margen */
+.year {
+    background-color: #BB86FC;
+    color: #121212;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
 }
 
-p {
-    color: #B0BEC5; /* Color del texto de descripción */
-    margin: 5px 0; /* Margen para los párrafos */
+.experienceCard {
+    background: #1E1E1E;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center; /* Centra el contenido dentro de la tarjeta */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experienceCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(187, 134, 252, 0.7);
+}
+
+.experienceCard h3 {
+    color: #BB86FC;
+    margin-bottom: 8px;
+    font-size: 1.4em;
+}
+
+.experienceCard p {
+    color: #B0BEC5;
+    line-height: 1.5;
+    margin-top: 10px;
 }

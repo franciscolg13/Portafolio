@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import styles from '../styles/Experience.module.css';
 
 const experiences = [
-    { year: 'Jun, 2024 - Act', title: 'Full Stack LLM Development Analyst', description: 'Accenture.' },
+    { year: 'Jun, 2024 - Act', title: 'Full Stack LLM Development Analyst', description: 'Accenture' },
     { year: 'Mar. 2022 - Jun 2023', title: 'Cybersecurity - SOC Analyst at Babel', description: 'Babel' },
     { year: 'Dic. 2020 - Jun. 2021', title: 'Tecnico de Información', description: 'Disofic' }
 ];

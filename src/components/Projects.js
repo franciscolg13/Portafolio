@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 
 const projects = [
-    { title: 'Precio de coches', description: 'Es un proyecto en el cual tengo en cuenta una base de datos para analizar el precio de coches teniendo en cuenta Kilometros y más casuisticas.' },
+    { title: 'Precio de coches', description: 'Es un proyecto en el cual tengo en cuenta una base de datos para analizar el precio de coches teniendo en cuenta Kilometros y más casuísticas.' },
     { title: 'Expected Foot', description: 'Se trata de un proyecto realizado con dos personas más donde se tiene en cuenta el analisis de los jugadores partido a partido para crear un chatbot que pueda predecir cuantos goles puede llegar a meter un jugador teniendo en cuenta sus características.' },
     { title: 'Perceptron', description: 'Un proyecto donde el usuario puede poner a prueba una neurona.' },
     { title: 'Salario trabajadores', description: 'El proyecto trata de analizar el salario de unos trabajadores teniendo en cuenta un CSV.'}

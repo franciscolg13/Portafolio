@@ -16,6 +16,8 @@ const Special = () => {
         { name: 'MongoDB' },
         { name: 'OSINT' },
         { name: 'Autopsy' },
+        { name: 'IntellJ IDEA' },
+
     ];
 
     // Configuración de variantes para las animaciones

@@ -17,6 +17,8 @@ const Special = () => {
         { name: 'OSINT' },
         { name: 'Autopsy' },
         { name: 'IntellJ IDEA' },
+        { name: 'Prompting Specialist' },
+        { name: 'Automatización' },
 
     ];
 

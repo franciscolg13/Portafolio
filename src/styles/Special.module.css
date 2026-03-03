@@ -1,40 +1,63 @@
 /* src/styles/Special.module.css */
 
 .special {
-    padding: 60px 20px; /* Espaciado superior e inferior */
-    background-color: #121212; /* Color de fondo oscuro */
-    color: #EAEAEA; /* Color del texto */
-    text-align: center; /* Centrar texto */
-    border-bottom: 2px solid #BB86FC; /* Borde inferior */
+  padding: 60px 20px;
+  background-color: #121212;
+  color: #EAEAEA;
+  text-align: center;
+  border-bottom: 2px solid #BB86FC;
 }
 
+/* Envoltorio de la lista */
 .toolList {
-    display: flex; /* Usar flexbox para el diseño */
-    justify-content: center; /* Centrar los elementos */
-    flex-wrap: wrap; /* Permitir que las herramientas se ajusten a múltiples líneas */
-    gap: 20px; /* Espacio entre elementos */
-    max-width: 100%; /* Asegura que el contenedor no tenga desbordamientos */
+  display: flex;
+  justify-content: center;
+  align-items: center;     /* asegura centrado vertical en filas */
+  flex-wrap: wrap;
+  gap: 20px;               /* el espacio entre tarjetas va aquí */
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;          /* por si el contenedor tiene ancho limitado */
+  box-sizing: border-box;
 }
 
+/* Cada tarjeta */
 .toolItem {
-    background: #1E1E1E; /* Fondo de la tarjeta */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para la tarjeta */
-    margin: 15px; /* Espaciado entre tarjetas */
-    padding: 10px; /* Ajustar padding para más espacio interno */
-    width: 200px; /* Ancho más pequeño */
-    max-width: 100%; /* Asegura que la tarjeta no exceda el contenedor */
-    box-sizing: border-box; /* Incluir padding y borde en el cálculo del ancho */
-    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
-    display: inline-block; /* Asegura que cada elemento se comporte como un bloque en línea */
+  background: #1E1E1E;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 200px;
+  max-width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  margin: 0;               /* QUITAMOS margin: 15px */
+  display: block;          /* QUITAMOS inline-block */
 }
 
 .toolItem:hover {
-    transform: scale(1.05); /* Escalar al pasar el ratón */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Sombra más prominente en hover */
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
-h2 {
-    color: #BB86FC; /* Color del encabezado */
-    margin-bottom: 20px; /* Espaciado inferior para el encabezado */
+/* Evita estilos globales: aplica SOLO dentro de esta sección */
+.special h2 {
+  color: #BB86FC;
+  margin-bottom: 20px;
+}
+
+/* Ajuste para móvil: tarjetas más cómodas y centradas */
+@media (max-width: 480px) {
+  .special {
+    padding: 50px 16px;
+  }
+
+  .toolList {
+    gap: 16px;
+  }
+
+  .toolItem {
+    width: min(320px, 100%);
+  }
 }

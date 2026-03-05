@@ -1,0 +1,77 @@
+.hobbiesSection {
+  padding: 60px 20px;
+  background-color: #121212;
+  color: #EAEAEA;
+  text-align: center;
+
+  border-bottom: 2px solid #BB86FC;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #BB86FC;
+}
+
+.intro {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #B0BEC5;
+  line-height: 1.6;
+}
+
+.subtitle {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #BB86FC;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #B0BEC5;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #1E1E1E;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(187,134,252,0.7);
+}
+
+.image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 15px;
+}
+
+.cardTitle {
+  color: #BB86FC;
+  margin-bottom: 8px;
+}
+
+.cardText {
+  color: #B0BEC5;
+  font-size: 0.9em;
+}

@@ -41,6 +41,7 @@ const Header = () => {
                     <li><a href="#special">Herramientas</a></li>
                     <li><a href="#experience">Experiencia</a></li>
                     <li><a href="#projects">Proyectos</a></li> 
+                    <li><a href="#hobbies">Hobbies</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>

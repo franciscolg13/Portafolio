@@ -45,26 +45,37 @@
     transition: all 0.3s ease-in-out;
 }
 
-/* Efecto hover */
 .navList a:hover {
     background-color: #BB86FC;
     color: #ffffff;
     border-color: #BB86FC;
 }
 
-/* Media Query para pantallas pequeñas */
 @media (max-width: 600px) {
     .header {
-        padding: 15px 0;
+        padding: 12px 10px;
     }
 
     .navList {
-        gap: 10px;
+        width: 100%;
+        max-width: 420px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        padding: 0 8px;
     }
 
     .navList li {
-        width: auto;
+        width: 100%;
+        margin: 0;
+    }
+
+    .navList a {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 15px;
+        padding: 12px 10px;
+        border-radius: 24px;
         text-align: center;
-        margin-bottom: 10px;
     }
 }
